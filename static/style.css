@@ -1,0 +1,223 @@
+/*reset*/
+*{
+    margin:0px;
+    padding:0px;
+    font-size:20px;
+    font-family: comforta;
+    color:white;
+    text-decoration:none;
+}
+@font-face {
+    font-family: platinumSign;
+    src: url(PlatinumSign.ttf);
+}
+@font-face {
+    font-family: comforta;
+    src: url(Comfortaa-Bold.ttf);
+}
+
+/*APP*/
+body{
+    background-color: rgb(4, 95, 50);
+}
+.app-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+    width:100%;
+}
+/*FLEX DO HEADER*/
+.flex-header-container{
+    display:flex;
+    align-items: center;
+    width: 100%;
+}
+    /*ESPAÇO DO LOGO*/
+    .logo{
+        width:20%;
+        text-align: center;
+    }
+    /*FONTE DO LOGO*/
+    .logo>a{
+        font-family: platinumSign;
+        font-size: 60px;
+    }
+    .logo-mobile{
+        display:none;
+    }
+    /*ESPAÇO DO NAV*/
+    .flex-nav{
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        width: 64%;
+        border: none;
+    }
+    .flex-nav a:hover{
+        border-bottom: 2px solid white;
+    }
+/*FLEX DO ARTICLE - LATERAL ESQUERDO E CENTRO-DIREITO*/
+.flex-article-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
+    /*LATERAL ESQUERDO*/
+    .colunm-tools{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content:space-between;
+        width:20%;
+    }
+    .colunm-tools>img{
+        width:70px;
+    }
+    /*CENTRO-DIREITO*/
+    .profile-box{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        width:80%;
+    }
+    .profile-data{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        background-color: antiquewhite;
+        width: 80%;
+        border: none;
+        border-radius: 10px;
+    }
+    .data-title{
+        width: 100%;
+        text-align: center;
+    }
+    .data{
+        display:none;
+        width:100%;
+    }
+    .pic-tri-down{
+        cursor: pointer;
+    }
+    .pic-tri-up{
+        display:none;
+        cursor: pointer;
+    }
+
+/*FOOTER*/
+.footer-data{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.footer-data>p{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
+
+.footer-data>p>a>img{
+    margin-top: 10px;
+    width: 50px;
+}
+
+/*--------------------------*/
+/*FOTO*/
+.profile-photo{
+    display:flex;
+    justify-content: start;
+    align-items:center;
+}
+.profile-photo>img{
+    margin: 10px 0 10px 10px;
+    width: 250px;
+    border: none;
+    border-radius: 50%;
+}
+.welcome{
+    color: white;
+}
+/*DADOS PESSOAIS*/
+h1{
+    font-size: 35px;
+    color:black;
+    margin:20px 10px 10px 10px;
+}
+p,h2{
+    color:black;
+    margin:20px 10px 10px 10px;
+}
+
+.data-name{
+    border-bottom: 2px solid black;
+    width:95%;
+    text-align: center;
+}
+
+/*MOBILE*/
+@media only screen and (max-width: 750px) {
+    .colunm-tools{
+        display: none;
+    }
+    .profile-box{
+        width: 98%;
+    }
+    .profile-data{
+        width:100%;
+    }
+    .profile-photo{
+        display:flex;
+        justify-content: start;
+        align-items:center;
+        flex-direction: column;
+    }
+    .welcome{
+        text-align:center;
+    }
+    .flex-nav{
+        display: none;
+    }
+    .footer-data{
+        flex-direction: column;
+        
+        align-items:center;
+    }
+    .logo{
+        display:none;
+    }
+    .logo-mobile{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        width: 100%;
+    }
+    .logo-mobile-icon{
+        font-family:  platinumSign;
+        font-size: 60px;
+    }
+    .dropdown-menu{
+        display:none;
+        position: absolute;
+        background-color: #10311b;
+        width: 50%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        right:0;
+        text-align: center;
+    }
+    .menu-option-mobile:hover{
+        text-decoration: underline;
+    }
+    .dropdown-container:hover .dropdown-menu{
+        display: block;
+    }
+}
