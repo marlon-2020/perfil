@@ -95,12 +95,12 @@ body{
         border-radius: 10px;
     }
     .data-title{
-        width: 100%;
+        width: 95%;
         text-align: center;
     }
     .data{
         display:none;
-        width:100%;
+        width:95%;
     }
     .pic-tri-down{
         cursor: pointer;
