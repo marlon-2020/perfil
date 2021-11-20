@@ -164,7 +164,7 @@ p,h2{
 }
 
 /*MOBILE*/
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1100px) {
     .colunm-tools{
         display: none;
     }
